@@ -1,0 +1,393 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Team | Ashoka Impact Finance Club</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "secondary-fixed": "#d7e2ff",
+                            "tertiary-container": "#734800",
+                            "on-secondary": "#ffffff",
+                            "primary": "#274102",
+                            "on-tertiary-fixed": "#2a1700",
+                            "primary-container": "#3d5919",
+                            "inverse-on-surface": "#f0f0f3",
+                            "secondary-container": "#b0cafe",
+                            "surface-dim": "#dadadc",
+                            "tertiary-fixed": "#ffddb7",
+                            "on-surface": "#1a1c1e",
+                            "tertiary": "#543300",
+                            "on-secondary-container": "#3b5482",
+                            "surface-variant": "#e2e2e5",
+                            "on-tertiary-fixed-variant": "#653e00",
+                            "on-primary-fixed": "#102000",
+                            "error-container": "#ffdad6",
+                            "surface-container-highest": "#e2e2e5",
+                            "surface-container-lowest": "#ffffff",
+                            "on-tertiary-container": "#ffb655",
+                            "outline": "#74796b",
+                            "on-primary-container": "#adcf81",
+                            "primary-fixed-dim": "#afd283",
+                            "outline-variant": "#c4c8b8",
+                            "background": "#f9f9fc",
+                            "surface-container-high": "#e8e8ea",
+                            "on-tertiary": "#ffffff",
+                            "on-background": "#1a1c1e",
+                            "on-error": "#ffffff",
+                            "on-error-container": "#93000a",
+                            "surface-tint": "#4a6725",
+                            "surface-container": "#eeeef0",
+                            "surface-bright": "#f9f9fc",
+                            "inverse-surface": "#2f3133",
+                            "on-secondary-fixed": "#001b3f",
+                            "on-primary": "#ffffff",
+                            "surface-container-low": "#f3f3f6",
+                            "error": "#ba1a1a",
+                            "tertiary-fixed-dim": "#ffb95d",
+                            "secondary": "#455e8c",
+                            "inverse-primary": "#afd283",
+                            "surface": "#f9f9fc",
+                            "on-surface-variant": "#44483c",
+                            "on-primary-fixed-variant": "#334e0f",
+                            "secondary-fixed-dim": "#adc7fb",
+                            "on-secondary-fixed-variant": "#2c4773",
+                            "primary-fixed": "#cbee9d",
+                            "navy-brand": "#00224d",
+                            "forest-brand": "#3d5919"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.5rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "gutter": "16px",
+                            "stack-lg": "24px",
+                            "base": "8px",
+                            "stack-sm": "4px",
+                            "section-gap": "120px",
+                            "stack-md": "12px",
+                            "container-padding": "24px",
+                            "container-max": "1200px"
+                        },
+                        "fontFamily": {
+                            "body-lg": ["Hanken Grotesk"],
+                            "headline-lg": ["Hanken Grotesk"],
+                            "headline-sm": ["Hanken Grotesk"],
+                            "title-lg": ["Hanken Grotesk"],
+                            "headline-lg-mobile": ["Hanken Grotesk"],
+                            "label-lg": ["Hanken Grotesk"],
+                            "body-md": ["Hanken Grotesk"],
+                            "display-lg": ["Hanken Grotesk"],
+                            "headline-md": ["Hanken Grotesk"],
+                            "watermark": ["Hanken Grotesk"]
+                        },
+                        "fontSize": {
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                            "watermark": ["120px", {"lineHeight": "120px", "fontWeight": "900"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-body-md selection:bg-primary selection:text-white bg-surface">
+<!-- TopNavBar (Identical to SCREEN_38) -->
+<nav class="bg-surface/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-outline-variant h-20 flex items-center transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-container-padding max-w-container-max mx-auto h-full">
+<a class="font-headline-sm text-primary font-bold transition-all active:scale-95" href="../index.html">
+                Ashoka Impact Finance Club
+            </a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../about_us/index.html">About Us</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../rise_capital/index.html">RISE Capital</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../advisory_projects/index.html">Advisory Projects</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../conclave/index.html">Conclave</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../the_review/index.html">The Review</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../seminars/index.html">Seminars</a>
+<div class="relative group">
+<button class="font-label-lg text-primary border-b-2 border-primary pb-1 flex items-center gap-1 transition-all">
+                        Team
+                        <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<div class="absolute left-0 mt-2 w-48 bg-white border border-outline-variant rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[70]">
+<a class="block px-4 py-3 text-sm text-on-surface hover:bg-surface-container hover:text-primary" href="../board/index.html">Board</a>
+<a class="block px-4 py-3 text-sm text-on-surface hover:bg-surface-container hover:text-primary" href="../members/index.html">Members</a>
+</div>
+</div>
+</div>
+<a class="bg-navy-brand text-white px-6 py-2.5 rounded-lg font-label-lg hover:bg-black transition-all active:scale-95 hidden md:block shadow-sm" href="../join_us/index.html">
+                Join Us
+            </a>
+<button class="lg:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Navigation Overlay (Identical to SCREEN_38) -->
+<div class="fixed inset-0 bg-surface z-[60] flex flex-col p-8 transform translate-x-full transition-transform duration-300 lg:hidden shadow-2xl" id="mobile-menu">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-sm font-bold text-primary">AIFC</span>
+<button id="close-menu-btn">
+<span class="material-symbols-outlined text-primary text-3xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="font-headline-md font-bold text-on-surface-variant" href="../about_us/index.html">About Us</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="../rise_capital/index.html">RISE Capital</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="../advisory_projects/index.html">Advisory Projects</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="../conclave/index.html">Conclave</a>
+<a class="font-headline-md font-bold text-primary" href="../members/index.html">Team</a>
+</div>
+<a class="mt-auto bg-navy-brand text-white py-4 rounded-lg font-label-lg text-center" href="../join_us/index.html">Join Us</a>
+</div>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-container-padding mb-section-gap">
+<div class="max-w-3xl reveal-on-scroll">
+<div class="flex items-center gap-4 mb-8">
+<div class="h-[2px] w-12 bg-forest-brand"></div>
+<span class="font-label-lg text-forest-brand uppercase tracking-widest">The Team</span>
+</div>
+<h1 class="font-display-lg text-navy-brand mb-8 leading-tight text-5xl lg:text-6xl">Our Intellectual Capital.</h1>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                    A diverse cohort of undergraduate and graduate students bridging the gap between rigorous financial modeling and meaningful social impact. Our team is structured across specialized pods to drive excellence in every mandate.
+                </p>
+</div>
+</section>
+<!-- Department Filters -->
+<section class="max-w-container-max mx-auto px-container-padding mb-16">
+<div class="flex flex-wrap gap-3 reveal-on-scroll">
+<button class="filter-btn bg-forest-brand text-white px-6 py-2 rounded-full font-label-lg transition-all shadow-sm">All Members</button>
+<button class="filter-btn bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-label-lg hover:bg-forest-brand/10 hover:text-forest-brand transition-all">Investment Pod</button>
+<button class="filter-btn bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-label-lg hover:bg-forest-brand/10 hover:text-forest-brand transition-all">Advisory Group</button>
+<button class="filter-btn bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-label-lg hover:bg-forest-brand/10 hover:text-forest-brand transition-all">Partnerships</button>
+<button class="filter-btn bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-label-lg hover:bg-forest-brand/10 hover:text-forest-brand transition-all">Operations</button>
+</div>
+</section>
+<!-- Team Grid -->
+<section class="max-w-container-max mx-auto px-container-padding mb-section-gap">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-16">
+<!-- Team Member 1 -->
+<div class="group cursor-pointer reveal-on-scroll">
+<div class="aspect-[4/5] bg-surface-container mb-6 overflow-hidden rounded-xl shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img alt="Arjun Mehta" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnaqicDPN5PkLwo6akSqckWMUHnbsy5mHkZOvFIeJoCev90MEkgpJkR7oWcP-A-tseV86rNvuKQcohgSiLhQSYKiMSK-rCk2bCicjXUj-n8CkAE5Cz1kKa_7ItTuYlmEItGn5EWU9Qxe3Wvztty-roQPZQZMPm2ysifvQtfzCoHE47JFoqHTdUPuOn79qz1bJ4k5edXJqZJ_vV2-8tic7_PF4xu3fqrXqi1marMPoX4vrGUoCeL1Sbo5jo2HD6F-2HYlyH_INY-As">
+</div>
+<div>
+<p class="font-label-lg text-forest-brand mb-2 tracking-wide uppercase">Investment Pod</p>
+<h3 class="font-title-lg text-navy-brand mb-1 group-hover:text-forest-brand transition-colors">Arjun Mehta</h3>
+<p class="font-body-md text-on-surface-variant">Lead Analyst</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group cursor-pointer reveal-on-scroll" style="transition-delay: 50ms;">
+<div class="aspect-[4/5] bg-surface-container mb-6 overflow-hidden rounded-xl shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img alt="Sanya Gupta" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb8epALN_Hv6MV3ioRMuiaH0WCy9dZ84eiBSwJEA3gZM4t9jhXGBeA6b4eVSFExauFRDq4zdxVXIgeD2iiKQtgzeogsb0J4WklYCHd38a6YMoN4FWPxSDeYbJpTwI4LqZLOKcn9S9ruE8bZky_eUQ3-AB8XfScl9heZI8l6EvKIaiie_VsfUQt8w1aXPq2I-k5YHXjgmR48jA-JkjxHuH29qy0sGabBIpe-uzhOxz8Ihwiw6Lvqv4AUCLVfcAnZxMs4Mh4Qxm2Y40">
+</div>
+<div>
+<p class="font-label-lg text-forest-brand mb-2 tracking-wide uppercase">Advisory Group</p>
+<h3 class="font-title-lg text-navy-brand mb-1 group-hover:text-forest-brand transition-colors">Sanya Gupta</h3>
+<p class="font-body-md text-on-surface-variant">Strategy Consultant</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group cursor-pointer reveal-on-scroll" style="transition-delay: 100ms;">
+<div class="aspect-[4/5] bg-surface-container mb-6 overflow-hidden rounded-xl shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img alt="Rohan Varma" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxlumFYp_V0P-QWv_YSevmK5wYnrsEDLri1kUdlkO07Qx7jGCAUMqdxRTmC8jTQ7WHZmBy9fOAPfiwq1DHGLNLx29yA8DxeX32PnUGbQB6GrSR-iuxx-uUAXKYaaAaU1ngCP-AKZNaD2mAtQGOmn9v8r52BlwOMVPr5E4qVpRmz02GRGeVsN_VflTdlu52m3DglnERuIDE7nGUhpLvALj0hQxyRsSphl27a0tjIGXyxrDyHB-Wy6ikV97RL9pneRbRCUkUXQFpt4w">
+</div>
+<div>
+<p class="font-label-lg text-forest-brand mb-2 tracking-wide uppercase">Partnerships</p>
+<h3 class="font-title-lg text-navy-brand mb-1 group-hover:text-forest-brand transition-colors">Rohan Varma</h3>
+<p class="font-body-md text-on-surface-variant">External Relations</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="group cursor-pointer reveal-on-scroll" style="transition-delay: 150ms;">
+<div class="aspect-[4/5] bg-surface-container mb-6 overflow-hidden rounded-xl shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img alt="Anjali Nair" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTEeaRZ5RMTRcCfXXz51mRhFSE_JCcg3f46BJS96CRyIHlXvw1o-gqEsBpuFEDQdgZHnylWDHH_VmsQmRmTYO48c7KlkI4HOaaQW7oT5TG_lley7rd_jx8Pf7TOdJQneRmAZbcJROLETYVfsKUhFZ5A5CoPDIhpWpygq8K0FEGo8SHmjFWL1HC1nEK7Qg9CDE97iz4ZRnsj-5wcwoTL6TSkMaEKl481kTtcKZFckKZCzRIlYFaxeAAam6MZYFR3GfMvVLA_dO5GJ4">
+</div>
+<div>
+<p class="font-label-lg text-forest-brand mb-2 tracking-wide uppercase">Investment Pod</p>
+<h3 class="font-title-lg text-navy-brand mb-1 group-hover:text-forest-brand transition-colors">Anjali Nair</h3>
+<p class="font-body-md text-on-surface-variant">Equity Researcher</p>
+</div>
+</div>
+<!-- Team Member 5 -->
+<div class="group cursor-pointer reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="aspect-[4/5] bg-surface-container mb-6 overflow-hidden rounded-xl shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img alt="Kabir Singh" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR9bCe3_1X809UyLeNFzMsJ9_8BAr2yAFdixzLRAAC9EhNCx69zTTM2ZfknEb01sACUlcJEmQQefJ3CzqVS2hVKdp1fQZF4yGsBurVo42sqvrZBpg6GvROzH4R7vLsp_ZgIIjoD-Hidl-J-iC4IXMp58Jkw-ScIJBze4f67HMnIoppn6gJsAtFI1sxu62bquaWMxNxoYtLNn8m8ZzbbgHD4tOvZMMONUsrRzj8N3DMowefJtL2JZZMq_Vz7EUxLUJbmSIeUKx8bfU">
+</div>
+<div>
+<p class="font-label-lg text-forest-brand mb-2 tracking-wide uppercase">Operations</p>
+<h3 class="font-title-lg text-navy-brand mb-1 group-hover:text-forest-brand transition-colors">Kabir Singh</h3>
+<p class="font-body-md text-on-surface-variant">Operations Associate</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recruitment CTA -->
+<section class="bg-surface-container-low py-24 relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-container-padding flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="md:w-3/5 reveal-on-scroll">
+<h2 class="font-headline-md text-navy-brand mb-6 text-3xl lg:text-4xl">Shape the Future of Impact Finance.</h2>
+<p class="font-body-lg text-on-surface-variant mb-10 leading-relaxed max-w-2xl">
+                        We are always looking for curious minds who are passionate about the intersection of social change and financial rigor. Applications for the Spring 2025 cohort open soon.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-forest-brand text-white px-10 py-4 rounded-lg font-label-lg hover:bg-navy-brand transition-all shadow-md uppercase tracking-widest">Apply Now</button>
+<button class="border border-outline-variant bg-surface text-on-surface-variant px-10 py-4 rounded-lg font-label-lg hover:border-forest-brand hover:text-forest-brand transition-all uppercase tracking-widest">Member Handbook</button>
+</div>
+</div>
+<div class="md:w-2/5 relative reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="bg-surface p-12 border border-outline-variant rounded-xl shadow-sm relative z-10 text-center md:text-left group hover:border-forest-brand/30 transition-all duration-500">
+<div class="w-16 h-16 bg-surface-container flex items-center justify-center rounded-lg mb-6 group-hover:bg-forest-brand transition-colors">
+<span class="material-symbols-outlined text-forest-brand text-4xl group-hover:text-white">groups</span>
+</div>
+<h4 class="font-headline-sm text-navy-brand mb-4">60+ Active Members</h4>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Representing 12 different majors and 5 continents, our team is as diverse as the impact we seek to create.</p>
+</div>
+<!-- Decorative accent -->
+<div class="absolute -top-6 -right-6 w-32 h-32 border-t-2 border-r-2 border-forest-brand/20 rounded-tr-xl"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Identical to SCREEN_38) -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="w-full py-24 px-container-padding max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
+<div class="md:col-span-5">
+<span class="font-headline-sm font-bold text-primary mb-8 block">Ashoka Impact Finance Club</span>
+<p class="text-on-surface-variant font-body-md max-w-sm mb-10 leading-relaxed">
+                        The definitive hub for student engagement in finance and social development at Ashoka University.
+                    </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">group</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2 md:col-start-7">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Navigation</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Home</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">About Us</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Projects</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Team</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Resources</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">RISE Capital</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Conclave 2024</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Research</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Contact</h4>
+<p class="text-on-surface-variant font-label-lg mb-4">info@aifc-ashoka.edu</p>
+<p class="text-on-surface-variant font-label-lg">Sonepat, Haryana</p>
+</div>
+</div>
+<div class="pt-10 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-body-md text-on-surface-variant">© 2024 Ashoka Impact Finance Club. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple filter interaction logic
+        document.querySelectorAll('.filter-btn').forEach(filter => {
+            filter.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(f => {
+                    f.classList.remove('bg-forest-brand', 'text-white', 'shadow-sm');
+                    f.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+                });
+                this.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+                this.classList.add('bg-forest-brand', 'text-white', 'shadow-sm');
+            });
+        });
+
+        // Scroll reveal logic
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'shadow-sm');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16', 'shadow-sm');
+            }
+        });
+    </script>
+</body></html>

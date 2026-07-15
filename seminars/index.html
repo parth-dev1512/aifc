@@ -1,0 +1,448 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Seminars | Ashoka Impact Finance Club</title>
+<!-- Google Font: Hanken Grotesk -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration based on {{DATA:SCREEN:SCREEN_38}} -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#274102",
+              "navy-brand": "#00224d",
+              "forest-brand": "#3d5919",
+              "surface": "#f9f9fc",
+              "on-surface": "#1a1c1e",
+              "on-surface-variant": "#44483c",
+              "outline-variant": "#c4c8b8",
+              "background": "#f9f9fc",
+            },
+            borderRadius: {
+                    "DEFAULT": "0.5rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            spacing: {
+                    "gutter": "16px",
+                    "stack-lg": "24px",
+                    "base": "8px",
+                    "stack-sm": "4px",
+                    "section-gap": "120px",
+                    "stack-md": "12px",
+                    "container-padding": "24px",
+                    "container-max": "1200px"
+            },
+            fontFamily: {
+                    "sans": ["Hanken Grotesk", "sans-serif"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "title-lg": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "label-lg": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"]
+            },
+            fontSize: {
+                    "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+            background-color: #ffffff;
+            color: #1a1c1e;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .reveal-on-scroll {
+            transition: all 1s ease-out;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-white overflow-x-hidden">
+<!-- TopNavBar: Identical to {{DATA:SCREEN:SCREEN_38}} -->
+<nav class="bg-surface/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-outline-variant h-20 flex items-center transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-container-padding max-w-container-max mx-auto h-full">
+<a class="font-headline-sm text-primary font-bold transition-all active:scale-95" href="../index.html">
+            Ashoka Impact Finance Club
+        </a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../about_us/index.html">About Us</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../rise_capital/index.html">RISE Capital</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../advisory_projects/index.html">Advisory Projects</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../conclave/index.html">Conclave</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../the_review/index.html">The Review</a>
+<a class="font-label-lg text-primary border-b-2 border-primary pb-1 transition-all" href="../seminars/index.html">Seminars</a>
+<div class="relative group">
+<button class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center">
+                    Team
+                    <span class="material-symbols-outlined text-sm ml-1">expand_more</span>
+</button>
+<div class="absolute left-0 mt-2 w-48 bg-white border border-outline-variant shadow-xl hidden group-hover:block transition-all duration-300">
+<a class="block px-4 py-3 text-sm text-on-surface hover:bg-surface" href="../board/index.html">Board</a>
+<a class="block px-4 py-3 text-sm text-on-surface hover:bg-surface" href="../members/index.html">Members</a>
+</div>
+</div>
+</div>
+<a class="bg-navy-brand text-white px-6 py-2.5 rounded-lg font-label-lg hover:bg-black transition-all active:scale-95 hidden md:block shadow-sm" href="../join_us/index.html">
+            Join Us
+        </a>
+<button class="lg:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="mt-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-container-padding mb-24 reveal-on-scroll">
+<div class="flex flex-col md:flex-row justify-between items-end gap-12 border-b border-outline-variant pb-16">
+<div class="max-w-2xl">
+<div class="flex items-center gap-4 mb-8">
+<div class="h-[2px] w-12 bg-forest-brand"></div>
+<span class="font-label-lg text-forest-brand uppercase tracking-widest">Academic &amp; Professional Development</span>
+</div>
+<h1 class="font-display-lg text-4xl md:text-5xl text-on-surface mb-8 leading-tight">The Seminar Series</h1>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">Engaging with the frontiers of impact investing, sustainable finance, and development economics through scholarly dialogue and practitioner insights.</p>
+</div>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 border border-navy-brand px-8 py-3 rounded-lg text-xs font-bold uppercase tracking-widest text-navy-brand hover:bg-surface transition-all active:scale-95">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span>
+                    Subscribe
+                </button>
+</div>
+</div>
+</section>
+<!-- Next Session Highlight -->
+<section class="max-w-container-max mx-auto px-container-padding mb-section-gap reveal-on-scroll">
+<h2 class="font-bold text-sm uppercase tracking-[0.2em] text-navy-brand mb-12 flex items-center gap-3">
+<span class="w-3 h-3 bg-forest-brand"></span>
+            Next Session
+        </h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Main Feature -->
+<div class="md:col-span-8 bg-white border border-outline-variant rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-12 relative group transition-all duration-500 hover:shadow-xl">
+<div class="w-full md:w-2/5 aspect-[4/5] overflow-hidden rounded-lg bg-surface">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Professional headshot of a professor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWF7M9n2Q3oa651omt5yHNUEz6G1FEY0LitH80SD3MaLCQl7W0Drn4ZVy_0b1t8wMmTGF7h9EWAXWgVxG6VbgxvpIYg7jriHIaIOuobNbU_ZR9qfTDlZn706j4f-CNi0EjrUhXnic300sxQsTKY0gQv3w9nD2FB4d3UswQSZsmsDDjQ7C4DK-AGkz2JvLVeq-heHtdcJZDw9vBcVu8G8jgUy184pcQEuVprgEJC2aYYAL7Doayjb06roi7aI4glXqKu_RGzCbAV0c">
+</div>
+<div class="w-full md:w-3/5 flex flex-col justify-center">
+<div class="flex items-center gap-2 text-forest-brand font-bold text-[11px] uppercase tracking-widest mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="event">event</span>
+                        October 24, 2024 • 18:30 IST
+                    </div>
+<h3 class="text-3xl font-bold text-on-surface mb-6 leading-tight">The Microeconomics of Social Impact Bonds</h3>
+<p class="font-body-md text-on-surface-variant mb-10 leading-relaxed">Dr. Amrita Sen, Visiting Fellow at the Centre for Sustainable Development, explores the mechanism design and risk-sharing frameworks of SIBs in emerging markets.</p>
+<div class="flex flex-wrap gap-8 items-center">
+<button class="bg-navy-brand text-white px-10 py-4 rounded-lg text-xs font-bold uppercase tracking-widest hover:bg-black transition-all active:scale-95 shadow-md">RSVP for Session</button>
+<span class="text-on-surface-variant font-medium text-xs flex items-center gap-2 uppercase tracking-wide">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+                            LT-201 &amp; Zoom
+                        </span>
+</div>
+</div>
+</div>
+<!-- Sidebar Info -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="bg-navy-brand text-white p-10 rounded-xl shadow-lg">
+<h4 class="text-xs font-bold uppercase tracking-widest mb-6 text-forest-brand">Seminar Format</h4>
+<p class="text-sm opacity-80 leading-relaxed mb-8 font-light">45-minute presentation followed by a moderated 15-minute Q&amp;A session for Ashoka students and faculty.</p>
+<div class="pt-8 border-t border-white/10 flex justify-between items-center">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em]">Credits: 1.0</span>
+<span class="material-symbols-outlined text-forest-brand" data-icon="info">info</span>
+</div>
+</div>
+<div class="bg-surface border border-outline-variant p-10 rounded-xl group hover:border-forest-brand/30 transition-all">
+<h4 class="text-xs font-bold uppercase tracking-widest mb-6 text-on-surface">Get Involved</h4>
+<p class="text-sm text-on-surface-variant mb-8 leading-relaxed">Want to present your research or propose a speaker for the next semester?</p>
+<a class="text-forest-brand font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        Submit Proposal
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Schedule -->
+<section class="bg-surface py-section-gap">
+<div class="max-w-container-max mx-auto px-container-padding reveal-on-scroll">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
+<div>
+<h2 class="text-4xl font-bold text-on-surface">Upcoming Schedule</h2>
+<p class="text-xs font-bold uppercase tracking-widest text-forest-brand mt-4">Autumn Semester 2024</p>
+</div>
+<div class="flex bg-white p-1 rounded-lg border border-outline-variant">
+<button class="px-8 py-3 bg-navy-brand text-white text-[10px] rounded-md font-bold uppercase tracking-widest">List</button>
+<button class="px-8 py-3 text-on-surface-variant text-[10px] font-bold uppercase tracking-widest hover:text-on-surface">Calendar</button>
+</div>
+</div>
+<div class="space-y-6">
+<!-- Timeline Item 1 -->
+<div class="flex flex-col md:flex-row gap-8 md:gap-16 group items-center">
+<div class="md:w-32 flex-shrink-0 text-center md:text-left">
+<div class="text-on-surface font-bold text-2xl">Nov 07</div>
+<div class="text-forest-brand font-bold text-[10px] uppercase tracking-widest mt-1">Thursday</div>
+</div>
+<div class="flex-grow bg-white border border-outline-variant rounded-xl p-8 flex flex-col md:flex-row justify-between items-center group-hover:border-forest-brand/30 group-hover:shadow-lg transition-all duration-300">
+<div class="flex gap-8 items-center w-full md:w-auto">
+<div class="w-14 h-14 bg-navy-brand text-white rounded-lg flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="finance">finance</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-on-surface uppercase tracking-tight">Institutional VC in Southeast Asia</h4>
+<p class="text-sm text-on-surface-variant font-light mt-1">Speaker: Arjun Menon (Ex-Sequoia, Impact Partner)</p>
+</div>
+</div>
+<div class="mt-6 md:mt-0 flex gap-8 w-full md:w-auto justify-end items-center">
+<span class="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest border-r border-outline-variant pr-8">Industry Talk</span>
+<button class="text-forest-brand font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:text-navy-brand transition-colors">Add to Cal <span class="material-symbols-outlined text-sm" data-icon="add">add</span></button>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex flex-col md:flex-row gap-8 md:gap-16 group items-center">
+<div class="md:w-32 flex-shrink-0 text-center md:text-left">
+<div class="text-on-surface font-bold text-2xl">Nov 21</div>
+<div class="text-forest-brand font-bold text-[10px] uppercase tracking-widest mt-1">Thursday</div>
+</div>
+<div class="flex-grow bg-white border border-outline-variant rounded-xl p-8 flex flex-col md:flex-row justify-between items-center group-hover:border-forest-brand/30 group-hover:shadow-lg transition-all duration-300">
+<div class="flex gap-8 items-center w-full md:w-auto">
+<div class="w-14 h-14 bg-navy-brand text-white rounded-lg flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="policy">policy</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-on-surface uppercase tracking-tight">Policy Frameworks for Green Credits</h4>
+<p class="text-sm text-on-surface-variant font-light mt-1">Faculty Presentation: Dr. Raghav Gupta</p>
+</div>
+</div>
+<div class="mt-6 md:mt-0 flex gap-8 w-full md:w-auto justify-end items-center">
+<span class="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest border-r border-outline-variant pr-8">Academic</span>
+<button class="text-forest-brand font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:text-navy-brand transition-colors">Add to Cal <span class="material-symbols-outlined text-sm" data-icon="add">add</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Archive Section -->
+<section class="py-section-gap max-w-container-max mx-auto px-container-padding reveal-on-scroll">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-20 gap-8">
+<div>
+<h2 class="text-4xl font-bold text-on-surface">Archive</h2>
+<p class="text-sm text-on-surface-variant font-light mt-2">Past session recordings, papers, and slide decks.</p>
+</div>
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-lg" data-icon="search">search</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-lg border border-outline-variant bg-white text-xs font-medium focus:border-navy-brand focus:ring-0 outline-none uppercase tracking-widest" placeholder="Search archives..." type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Archive Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface mb-8 relative overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" data-alt="Archive item image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYKZvbbtEiNKs6j2Xe0pFRiv-doM32YRkbTuDxFoIGv6BpL9-PI7dPueSnjIRKzNX6UxNuC2VtaP_5SvosniqN1RPzkJqM5VgW8OKg2URQ7Ez-XYVoSrmq9SXlVDoFk2ySuoMgeNcKfg5A0vpQ_YUTplqH6onjel199-PHgnZyk-X0CtR9AXuQ_zDxwZ4TmKErrBAWzSnFW8LQwMF8-xjle_rUUFymIdIBTvVzci92IMRNclYbHGasC3JfncII9l63NSs-ifOmgLw">
+<div class="absolute inset-0 bg-navy-brand/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-white rounded-full text-navy-brand flex items-center justify-center shadow-2xl scale-90 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 bg-navy-brand text-white text-[9px] font-bold px-3 py-1.5 rounded uppercase tracking-widest">58:12</div>
+</div>
+<div class="flex gap-6 mb-6">
+<span class="text-[10px] font-bold text-forest-brand uppercase tracking-widest">Spring 2024</span>
+<span class="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest">Impact Measurement</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-forest-brand transition-colors mb-4 leading-tight uppercase tracking-tight">Beyond the ESG Label: A Critique</h4>
+<p class="text-sm text-on-surface-variant font-light line-clamp-2 leading-relaxed">Prof. Michael Chen discusses the decoupling of ESG ratings from actual carbon performance.</p>
+<div class="mt-8 flex gap-8 pt-8 border-t border-outline-variant">
+<button class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-forest-brand transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+                        Paper
+                    </button>
+<button class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-forest-brand transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                        Slides
+                    </button>
+</div>
+</div>
+<!-- Archive Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface mb-8 relative overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" data-alt="Archive item image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIlB8Ir5E4CWoh0O_M-tHX5A6YkMwFakzY-3tr1WY0NXpwe7y_M6RgFPeIMSZ-u1AJZxOgV_BTx0__FSeVRcdfWHbDBqYFtqhuXdLO-rqkknBCoBUCBAvFvOmwzPv3xbLBgpYfzLP7A3ugCwNfK6N1D1__BRMFo0hSd2wBLJh8GfqpZ8iFuODdk8MXHW_ZtEiXqYb8FTMUWjfrS8dCb3NbPW2jPGA-xMYLTVbgShjXgBK0aDCUNGE4gUfH8iRoGbWmWVZNyJbVkzA">
+<div class="absolute inset-0 bg-navy-brand/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-white rounded-full text-navy-brand flex items-center justify-center shadow-2xl scale-90 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 bg-navy-brand text-white text-[9px] font-bold px-3 py-1.5 rounded uppercase tracking-widest">42:05</div>
+</div>
+<div class="flex gap-6 mb-6">
+<span class="text-[10px] font-bold text-forest-brand uppercase tracking-widest">Spring 2024</span>
+<span class="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest">Microfinance</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-forest-brand transition-colors mb-4 leading-tight uppercase tracking-tight">Refining Grameen: New Models</h4>
+<p class="text-sm text-on-surface-variant font-light line-clamp-2 leading-relaxed">Case studies on hybrid non-profit and for-profit microfinance structures in South Asia.</p>
+<div class="mt-8 flex gap-8 pt-8 border-t border-outline-variant">
+<button class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-forest-brand transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+                        Paper
+                    </button>
+</div>
+</div>
+<!-- Archive Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface mb-8 relative overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" data-alt="Archive item image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnD1wvnftUBn6bR0oll9UilN-J3kxOBUj7uG4QvQ36a-C7Hc4PBEpRZrXl214nrYQyWp-u4K-LXbm3FBr-J5AxoNGFsN3gDh393ZZiOk0xloI9jtYdK_KD-fgX5CBPKdvxS9l9WrZRld7laKPLuOOFskzY_NTwi_fDyjBUfBi9yCsTqBNECIowW5-jMyJMY6BBLXCieg6TrVJXStHlbNmoMuYuDeP8D37ovHoYhn637RxStcV4Ym53MfZm6KL9AbdSAL7W2bvp5FM">
+<div class="absolute inset-0 bg-navy-brand/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-white rounded-full text-navy-brand flex items-center justify-center shadow-2xl scale-90 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 bg-navy-brand text-white text-[9px] font-bold px-3 py-1.5 rounded uppercase tracking-widest">65:40</div>
+</div>
+<div class="flex gap-6 mb-6">
+<span class="text-[10px] font-bold text-forest-brand uppercase tracking-widest">Winter 2023</span>
+<span class="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest">Carbon Markets</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-forest-brand transition-colors mb-4 leading-tight uppercase tracking-tight">Voluntary Carbon Credits in India</h4>
+<p class="text-sm text-on-surface-variant font-light line-clamp-2 leading-relaxed">A workshop on the regulatory shifts and transparency challenges in the VCM space.</p>
+<div class="mt-8 flex gap-8 pt-8 border-t border-outline-variant">
+<button class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-forest-brand transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                        Slides
+                    </button>
+</div>
+</div>
+</div>
+<div class="mt-20 flex justify-center">
+<button class="px-12 py-5 border-2 border-navy-brand rounded-lg text-navy-brand text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-navy-brand hover:text-white transition-all active:scale-95">Load More Sessions</button>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-container-max mx-auto px-container-padding mb-section-gap reveal-on-scroll">
+<div class="bg-navy-brand rounded-2xl p-16 md:p-24 text-center relative overflow-hidden shadow-2xl">
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-bold text-white mb-8 uppercase tracking-tight">Never Miss a Seminar</h2>
+<p class="text-white/60 text-sm md:text-lg mb-12 max-w-2xl mx-auto font-light leading-relaxed">Get monthly digests of academic papers, speaker announcements, and exclusive invitations to student-only workshops.</p>
+<form class="flex flex-col md:flex-row gap-6 max-w-xl mx-auto">
+<input class="flex-grow px-8 py-5 rounded-lg bg-white/5 border border-white/20 text-white text-sm focus:ring-2 focus:ring-forest-brand focus:border-forest-brand outline-none uppercase tracking-widest placeholder:text-white/30" placeholder="University Email" type="email">
+<button class="bg-forest-brand text-white px-12 py-5 rounded-lg text-[11px] font-bold uppercase tracking-widest hover:bg-white hover:text-navy-brand transition-all active:scale-95 shadow-lg" type="submit">Subscribe</button>
+</form>
+</div>
+<!-- Decorative accent -->
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-forest-brand/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer: Identical to {{DATA:SCREEN:SCREEN_38}} -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="w-full py-24 px-container-padding max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
+<div class="md:col-span-5">
+<span class="font-headline-sm font-bold text-primary mb-8 block">Ashoka Impact Finance Club</span>
+<p class="text-on-surface-variant font-body-md max-w-sm mb-10 leading-relaxed">
+                    The definitive hub for student engagement in finance and social development at Ashoka University.
+                </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">group</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2 md:col-start-7">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Navigation</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Home</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">About Us</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Projects</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Team</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Resources</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">RISE Capital</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Conclave 2024</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Research</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Contact</h4>
+<p class="text-on-surface-variant font-label-lg mb-4">info@aifc-ashoka.edu</p>
+<p class="text-on-surface-variant font-label-lg">Sonepat, Haryana</p>
+</div>
+</div>
+<div class="pt-10 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-body-md text-on-surface-variant">© 2024 Ashoka Impact Finance Club. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'shadow-sm');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16', 'shadow-sm');
+            }
+        });
+    });
+</script>
+</body></html>

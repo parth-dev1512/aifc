@@ -1,0 +1,433 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "brand": {
+                "forest": "#3d5919",
+                "navy": "#00224d",
+                "surface": "#f9f9fc",
+              },
+              "primary": "#274102",
+              "on-primary": "#ffffff",
+              "secondary": "#455e8c",
+              "outline": "#74796b",
+              "surface": "#f9f9fc",
+              "on-surface": "#1a1c1e",
+              "on-surface-variant": "#44483c",
+              "navy-brand": "#00224d",
+              "forest-brand": "#3d5919",
+              "outline-variant": "#c4c8b8"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.5rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            "spacing": {
+              "gutter": "16px",
+              "stack-lg": "24px",
+              "base": "8px",
+              "stack-sm": "4px",
+              "section-gap": "100px",
+              "stack-md": "12px",
+              "container-padding": "24px",
+              "container-max": "1200px"
+            },
+            "fontFamily": {
+              "sans": ["Hanken Grotesk", "sans-serif"],
+              "body-lg": ["Hanken Grotesk"],
+              "headline-lg": ["Hanken Grotesk"],
+              "headline-sm": ["Hanken Grotesk"],
+              "title-lg": ["Hanken Grotesk"],
+              "headline-lg-mobile": ["Hanken Grotesk"],
+              "label-lg": ["Hanken Grotesk"],
+              "body-md": ["Hanken Grotesk"],
+              "display-lg": ["Hanken Grotesk"],
+              "headline-md": ["Hanken Grotesk"],
+              "watermark": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+              "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+              "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+              "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+              "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+              "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+              "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+              "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+              "display-lg": ["80px", {"lineHeight": "88px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+              "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+              "watermark": ["120px", {"lineHeight": "120px", "fontWeight": "900"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script></head><body class="bg-white text-on-surface font-body-md selection:bg-primary selection:text-white overflow-x-hidden">
+
+<!-- TopNavBar -->
+<nav class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-outline-variant h-20 flex items-center transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-container-padding max-w-container-max mx-auto h-full">
+<a class="font-headline-sm text-primary font-bold transition-all active:scale-95" href="../index.html">
+            Ashoka Impact Finance Club
+        </a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../about_us/index.html">About Us</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../rise_capital/index.html">RISE Capital</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../advisory_projects/index.html">Advisory Projects</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../conclave/index.html">Conclave</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../the_review/index.html">The Review</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="../seminars/index.html">Seminars</a>
+<div class="relative group">
+<button class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center gap-1">
+                    Team <span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+</div>
+<a class="bg-navy-brand text-white px-6 py-2.5 rounded-lg font-label-lg hover:bg-zinc-800 transition-all active:scale-95 hidden md:block shadow-sm" href="../join_us/index.html">
+            Join Us
+        </a>
+<button class="lg:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Navigation Overlay -->
+<div class="fixed inset-0 bg-white z-[60] flex flex-col p-8 transform translate-x-full transition-transform duration-300 lg:hidden shadow-2xl" id="mobile-menu">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-sm font-bold text-primary">AIFC</span>
+<button id="close-menu-btn">
+<span class="material-symbols-outlined text-primary text-3xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="font-headline-md font-bold text-on-surface-variant" href="../about_us/index.html">About Us</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="../rise_capital/index.html">RISE Capital</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="../advisory_projects/index.html">Advisory Projects</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="../conclave/index.html">Conclave</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="../members/index.html">Team</a>
+</div>
+<a class="mt-auto bg-navy-brand text-white py-4 rounded-lg font-label-lg text-center" href="../join_us/index.html">Join Us</a>
+</div>
+
+<main class="pt-16">
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-container-padding max-w-container-max mx-auto">
+        <div class="mb-4">
+            <span class="mono-label">CHEST26 / CAPITAL FOR RESILIENCE, EQUITY AND SUSTAINABLE TRANSITION</span>
+        </div>
+        <h1 class="text-on-surface mb-12 uppercase text-9xl leading-none">The<br>Conclave</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mb-20">
+            <div>
+                <p class="font-title-lg text-on-surface leading-snug mb-8">
+                    Two days. November 13 and 14, 2026. Day One online and open. Day Two in person in Delhi. Hosted with Ashoka University.
+                </p>
+                <div class="mb-10">
+                    <p class="mono-label text-forest-brand mb-4">Day One registration is open. Free, and online.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-[#274102] text-white px-6 py-3 rounded-sm mono-label hover:bg-black transition-all">Register for Day One →</button>
+                        <button class="border border-outline text-on-surface px-6 py-3 rounded-sm mono-label hover:bg-surface transition-all">Become a partner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-outline-variant pt-8">
+                <!-- Decorative or Placeholder Area -->
+            </div>
+        </div>
+
+        <!-- Hero Stats/Info Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 border-t border-outline-variant">
+            <div class="p-6 border-r border-outline-variant">
+                <span class="mono-label block mb-2">Dates</span>
+                <p class="font-bold">November 13 and 14, 2026</p>
+            </div>
+            <div class="p-6 border-r border-outline-variant">
+                <span class="mono-label block mb-2">Format</span>
+                <p class="font-bold">Two days. Virtual, then Delhi</p>
+            </div>
+            <div class="p-6 border-r border-outline-variant">
+                <span class="mono-label block mb-2">Day One</span>
+                <p class="font-bold">Free. Registration open</p>
+            </div>
+            <div class="p-6">
+                <span class="mono-label block mb-2">Day Two</span>
+                <p class="font-bold">In person, Delhi. Panels and dinner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Now Section -->
+    <section class="py-section-gap px-container-padding max-w-container-max mx-auto border-t border-outline-variant" id="why-now">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 reveal-on-scroll">
+            <div class="md:col-span-4">
+                <span class="mono-label block mb-4">01 / WHY NOW</span>
+                <h2 class="font-headline-lg text-on-surface leading-tight uppercase">The system is being built right now.</h2>
+            </div>
+            <div class="md:col-span-8 space-y-6">
+                <p class="text-xl leading-relaxed text-on-surface-variant">
+                    India's impact finance system is taking shape as we speak. New instruments, new institutions, and changing regulation are moving capital toward low-carbon infrastructure, and the rules are still being written.
+                </p>
+                <p class="text-xl leading-relaxed text-on-surface-variant">
+                    That conversation happens at practitioner forums, policy consultations, and inside institutions. People early in their careers are rarely in the room for it, least of all in India.
+                </p>
+                <p class="text-xl font-bold text-on-surface">
+                    The Conclave puts them in the room. Not a simulation of the conversation. The conversation itself, while it is still unsettled.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-24 reveal-on-scroll">
+            <div>
+                <h4 class="font-bold mb-4">Why Ashoka convenes it</h4>
+                <p class="text-on-surface-variant leading-relaxed">
+                    Its founders and trustees work across finance, investing, entrepreneurship and philanthropy. Its Centre for Entrepreneurship and Centre for Climate Change and Sustainability <i class="italic">give the subject real footing on campus</i>. Its place in Indian higher education lets it bring policymakers, investors, and practitioners into one room.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">An established model, new to India</h4>
+                <p class="text-on-surface-variant leading-relaxed">
+                    Oxford and INSEAD run summits in this field, Geneva hosts a cluster of events around it, and Mumbai Climate Week held its first edition in February 2026. Putting people early in their careers directly with senior practitioners works. The Conclave is the first attempt to build it for India, and it is meant to return.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Format Section -->
+    <section class="bg-forest-brand text-white py-24 px-container-padding" id="format">
+        <div class="max-w-container-max mx-auto">
+            <div class="flex justify-between items-start mb-16 reveal-on-scroll">
+                <div class="">
+                    <span class="mono-label text-white/60 block mb-4">02 / FORMAT</span>
+                    <h2 class="font-display-lg text-4xl lg:text-5xl uppercase">Two days, two rooms.</h2>
+                </div>
+                <div class="text-right hidden md:block">
+                    <p class="mono-label text-white/60">Theme to be announced. Speakers to be confirmed.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/20 border border-white/20 reveal-on-scroll">
+                <div class="bg-forest-brand p-10">
+                    <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+                        <span class="mono-label text-white/60">Day One / Online / Open</span>
+                        <span class="mono-label text-white/60">Nov 13, 2026</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6">Virtual and open</h3>
+                    <p class="text-white/80 leading-relaxed mb-8">
+                        Fully virtual and open to anyone, at no cost. One or two panels of four to five practitioners, convened under this edition's theme, with speakers drawn from India and Europe. The session runs as open questioning, not a one-way address. The recording becomes the club's first published piece.
+                    </p>
+                    <span class="mono-label text-white/60">Registration Open / Free to Attend</span>
+                </div>
+                <div class="bg-forest-brand p-10">
+                    <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+                        <span class="mono-label text-white/60">Day Two / In Person / Delhi</span>
+                        <span class="mono-label text-white/60">Nov 14, 2026</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6">In the room, in Delhi</h3>
+                    <p class="text-white/80 leading-relaxed mb-8">
+                        In person at a hotel venue in Delhi. An afternoon programme, 3 to 7 PM, of two practitioner panels, followed by an evening dinner for the Ashoka community. The conversation continues off the panel and into the room.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 max-w-2xl reveal-on-scroll">
+                <span class="mono-label text-white/60 block mb-4">IN THE ROOM</span>
+                <p class="text-2xl leading-snug">
+                    Direct conversation with people working at the highest level of this field in India today. Not a question from the floor. A sustained exchange, across the panels and at the dinner. We are also exploring structured time between firms and attendees as part of Day Two.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="py-24 px-container-padding max-w-container-max mx-auto" id="register">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 reveal-on-scroll">
+            <div>
+                <span class="mono-label block mb-4">03 / REGISTRATION</span>
+                <h2 class="font-headline-lg text-on-surface mb-6 uppercase leading-tight">Day One registration is open.</h2>
+                <p class="text-on-surface-variant leading-relaxed">
+                    Day One is virtual and free. Register for the joining link. Day Two in Delhi is in person, with registration to follow.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <div class="flex gap-2 mb-4">
+                    <input class="flex-1 bg-surface border border-outline-variant px-4 py-3 rounded-sm focus:ring-1 focus:ring-primary outline-none" placeholder="you@email.com" type="email">
+                    <button class="bg-[#00224d] text-white px-6 py-3 rounded-sm mono-label hover:bg-black transition-all">Register for Day One</button>
+                </div>
+                <p class="mono-label text-[10px]">Free to attend. Your joining link and calendar invite arrive by email.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="bg-[#f2f4f0] py-24 px-container-padding" id="partnership">
+        <div class="max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24 reveal-on-scroll">
+                <div>
+                    <span class="mono-label block mb-4">04 / PARTNERSHIP</span>
+                    <h2 class="font-headline-lg text-on-surface mb-8 uppercase leading-tight">Funded entirely through sponsorship.</h2>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        That is how it is built. We are looking for a small number of partners to be part of the first edition.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-on-surface-variant mb-6 leading-relaxed">
+                        A partner is present in front of a room of serious people early in their careers in impact finance, across an open online audience on Day One and an in-person audience in Delhi on Day Two. It is association with the first convening of its kind in India, at the point where it begins.
+                    </p>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        We would rather build this with people who care about the field than fill a wall of logos. There is room to fund the event, support a single panel, contribute in kind, or partner institutionally. Contribution levels for each tier are shared on request.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tiers -->
+            <div class="space-y-12 reveal-on-scroll">
+                <div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between gap-8">
+                    <div class="md:w-1/2">
+                        <span class="mono-label block mb-2">01</span>
+                        <h4 class="text-2xl font-bold mb-2">Lead Partner</h4>
+                        <p class="text-on-surface-variant max-w-md">Lead billing on the page and in the room in Delhi, named association across both days, and a hand in shaping the programme. One partner only.</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                    </div>
+                </div>
+
+                <div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between gap-8">
+                    <div class="md:w-1/2">
+                        <span class="mono-label block mb-2">02</span>
+                        <h4 class="text-2xl font-bold mb-2">Convening Partner</h4>
+                        <p class="text-on-surface-variant max-w-md">Prominent billing across Day One's open audience and Day Two in Delhi, with a seat at the dinner.</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                    </div>
+                </div>
+
+                <div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between gap-8">
+                    <div class="md:w-1/2">
+                        <span class="mono-label block mb-2">03</span>
+                        <h4 class="text-2xl font-bold mb-2">Supporting Partner</h4>
+                        <p class="text-on-surface-variant max-w-md">Brand presence across the Conclave and acknowledgement from the panels on both days.</p>
+                    </div>
+                    <div class="flex items-center gap-4 flex-wrap">
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                    </div>
+                </div>
+
+                <div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between gap-8">
+                    <div class="md:w-1/2">
+                        <span class="mono-label block mb-2">04</span>
+                        <h4 class="text-2xl font-bold mb-2">In-Kind Partner</h4>
+                        <p class="text-on-surface-variant max-w-md">Venue, hospitality, media, or services, recognised alongside funding partners.</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                        <div class="w-32 h-16 border-2 border-dashed border-outline-variant rounded flex items-center justify-center mono-label text-[10px]">OPEN</div>
+                        <span class="mono-label text-[10px]">and more</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Build with us CTA -->
+            <div class="mt-24 pt-24 border-t border-outline-variant flex flex-col md:flex-row justify-between gap-12 reveal-on-scroll">
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold mb-6">Or build it with us</h3>
+                    <p class="text-on-surface-variant max-w-md">Institutional partnership is open to organisations that want to co-design a session, help shape the theme, or bring their network into the room. If that is interesting, the conversation starts with an email.</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <button class="bg-[#1a3001] text-white px-8 py-4 rounded-sm mono-label hover:bg-black transition-all mb-4">Write to us about partnership →</button>
+                    <p class="mono-label text-brand-forest">impactfinance@ashoka.edu.in</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Footer Style Hero Re-echo -->
+    <section class="bg-forest-brand text-white py-24 px-container-padding">
+        <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-end gap-12">
+            <div>
+                <h2 class="font-display-lg text-6xl uppercase mb-8">The Conclave</h2>
+                <p class="max-w-sm text-white/70">The Ashoka Impact Finance Conclave. November 13 and 14, 2026. Hosted with Ashoka University. Details to follow.</p>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-4 mono-label text-white/60 text-right">
+                <a class="hover:text-white transition-colors" href="#">← Return to AIFC</a>
+                <a class="hover:text-white transition-colors" href="#">Register for Day One</a>
+                <a class="hover:text-white transition-colors" href="#">Partnership enquiries</a>
+                <span class="mt-4">CHEST26 / First edition</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer (Identical to SCREEN_38/54 structure) -->
+<footer class="bg-white border-t border-outline-variant">
+    <div class="w-full py-16 px-container-padding max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-16">
+            <div class="md:col-span-5">
+                <span class="mono-label font-bold text-primary mb-8 block">Ashoka Impact Finance Club</span>
+                <p class="text-on-surface-variant font-body-md max-w-sm mb-10 leading-relaxed">
+                    The definitive hub for student engagement in finance and social development at Ashoka University.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-sm border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white transition-all" href="#">
+                        <span class="material-symbols-outlined text-lg">share</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-sm border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white transition-all" href="#">
+                        <span class="material-symbols-outlined text-lg">alternate_email</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-sm border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white transition-all" href="#">
+                        <span class="material-symbols-outlined text-lg">group</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-2 md:col-start-7">
+                <h4 class="mono-label text-primary mb-8">Navigation</h4>
+                <ul class="space-y-4">
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors mono-label text-[12px]" href="#">Home</a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors mono-label text-[12px]" href="#">About Us</a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors mono-label text-[12px]" href="#">Projects</a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors mono-label text-[12px]" href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="mono-label text-primary mb-8">Resources</h4>
+                <ul class="space-y-4">
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors mono-label text-[12px]" href="#">RISE Capital</a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors mono-label text-[12px]" href="#">Conclave 2026</a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors mono-label text-[12px]" href="#">Research</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="mono-label text-primary mb-8">Contact</h4>
+                <p class="text-on-surface-variant mono-label text-[12px] mb-4">info@aifc-ashoka.edu</p>
+                <p class="text-on-surface-variant mono-label text-[12px]">Sonepat, Haryana</p>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="mono-label text-[11px] text-on-surface-variant">© 2024 Ashoka Impact Finance Club. All rights reserved.</p>
+            <div class="flex gap-8">
+                <a class="mono-label text-[11px] text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a>
+                <a class="mono-label text-[11px] text-on-surface-variant hover:text-primary" href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+    });
+</script></body></html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "primary": "#274102",
+                            "navy-brand": "#00224d",
+                            "forest-brand": "#3d5919",
+                            "on-surface": "#1a1c1e",
+                            "on-surface-variant": "#44483c",
+                            "outline-variant": "#c4c8b8",
+                            "surface": "#f9f9fc",
+                            "surface-container": "#eeeef0",
+                            "surface-container-low": "#f3f3f6",
+                            "surface-container-lowest": "#ffffff"
+                        },
+                        "fontFamily": {
+                            "sans": ["Hanken Grotesk", "sans-serif"],
+                            "body-lg": ["Hanken Grotesk"],
+                            "headline-lg": ["Hanken Grotesk"],
+                            "headline-sm": ["Hanken Grotesk"],
+                            "title-lg": ["Hanken Grotesk"],
+                            "headline-lg-mobile": ["Hanken Grotesk"],
+                            "label-lg": ["Hanken Grotesk"],
+                            "body-md": ["Hanken Grotesk"],
+                            "display-lg": ["Hanken Grotesk"],
+                            "headline-md": ["Hanken Grotesk"],
+                            "watermark": ["Hanken Grotesk"]
+                        },
+                        "fontSize": {
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                            "watermark": ["120px", {"lineHeight": "120px", "fontWeight": "900"}]
+                        },
+                        "spacing": {
+                            "container-padding": "24px",
+                            "container-max": "1200px"
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+<style>
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-link {
+            @apply font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200;
+        }
+        .nav-link-active {
+            @apply font-label-lg text-primary border-b-2 border-primary pb-1 transition-all;
+        }
+    </style>
+</head>
+<body class="bg-white text-on-surface font-sans selection:bg-primary selection:text-white overflow-x-hidden">
+<!-- TopNavBar Identical to SCREEN_38 -->
+<nav class="bg-surface/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-outline-variant h-20 flex items-center transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-container-padding max-w-container-max mx-auto h-full">
+<a class="font-headline-sm text-primary font-bold transition-all active:scale-95" href="../index.html">
+            Ashoka Impact Finance Club
+        </a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="nav-link-active" href="../about_us/index.html">About Us</a>
+<a class="nav-link" href="../rise_capital/index.html">RISE Capital</a>
+<a class="nav-link" href="../advisory_projects/index.html">Advisory Projects</a>
+<a class="nav-link" href="../conclave/index.html">Conclave</a>
+<a class="nav-link" href="../the_review/index.html">The Review</a>
+<a class="nav-link" href="../seminars/index.html">Seminars</a>
+<div class="relative group">
+<a class="nav-link flex items-center gap-1" href="../members/index.html">
+                    Team
+                    <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</a>
+</div>
+</div>
+<a class="bg-navy-brand text-white px-6 py-2.5 rounded-lg font-label-lg hover:bg-black transition-all active:scale-95 hidden md:block shadow-sm" href="../join_us/index.html">
+            Join Us
+        </a>
+<button class="lg:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section with watermark -->
+<section class="relative min-h-[500px] flex flex-col justify-center items-start overflow-hidden py-24 px-container-padding max-w-container-max mx-auto">
+<div class="absolute -top-10 -right-20 watermark-text font-watermark text-watermark text-on-surface opacity-[0.03] pointer-events-none uppercase">
+            IMPACT FINANCE
+        </div>
+<div class="relative z-10 max-w-3xl">
+<div class="flex items-center gap-4 mb-8">
+<div class="h-[2px] w-12 bg-forest-brand"></div>
+<span class="font-label-lg text-forest-brand uppercase tracking-widest">Our Foundation</span>
+</div>
+<h1 class="font-display-lg text-4xl md:text-5xl lg:text-6xl text-on-surface leading-tight mb-8">
+                Defining the future of <span class="text-forest-brand">Social Investment</span>.
+            </h1>
+<p class="font-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+                The Ashoka Impact Finance Club (AIFC) is a premier student-led organization at Ashoka University dedicated to bridging the gap between rigorous financial principles and sustainable social impact.
+            </p>
+</div>
+</section>
+<!-- Mission & Vision -->
+<section class="py-24 px-container-padding max-w-container-max mx-auto border-t border-outline-variant">
+<div class="grid md:grid-cols-2 gap-16 lg:gap-32">
+<div class="reveal-on-scroll">
+<h2 class="font-headline-sm text-primary mb-8 uppercase tracking-wide">Our Mission</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed font-body-md">
+                    To empower the next generation of financial leaders with the tools, knowledge, and network required to drive capital towards solutions that address the world's most pressing socio-economic and environmental challenges.
+                </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-forest-brand text-xl">school</span>
+</div>
+<div>
+<p class="text-on-surface-variant font-body-md">Democratizing access to impact investing education.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-forest-brand text-xl">handshake</span>
+</div>
+<div>
+<p class="text-on-surface-variant font-body-md">Facilitating student-led advisory projects with non-profits.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal-on-scroll" style="transition-delay: 200ms;">
+<h2 class="font-headline-sm text-primary mb-8 uppercase tracking-wide">Our Vision</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed font-body-md">
+                    To become a global lighthouse for academic excellence in social finance, fostering a community where profit and purpose are viewed as inseparable components of a healthy global economy.
+                </p>
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant">
+<span class="font-label-lg text-primary uppercase tracking-widest mb-6 block">Core Values</span>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 bg-surface-container-lowest text-navy-brand text-xs font-bold tracking-widest rounded-lg border border-outline-variant">INTEGRITY</span>
+<span class="px-5 py-2 bg-surface-container-lowest text-navy-brand text-xs font-bold tracking-widest rounded-lg border border-outline-variant">INNOVATION</span>
+<span class="px-5 py-2 bg-surface-container-lowest text-navy-brand text-xs font-bold tracking-widest rounded-lg border border-outline-variant">IMPACT</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="bg-surface py-24 border-y border-outline-variant">
+<div class="px-container-padding max-w-container-max mx-auto">
+<div class="text-center mb-24 reveal-on-scroll">
+<h2 class="font-headline-lg text-on-surface mb-4">A Journey of Growth</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto uppercase tracking-widest text-xs">From a small discussion group to an institutionalized club.</p>
+</div>
+<div class="relative space-y-24">
+<!-- Vertical Line -->
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant -translate-x-1/2"></div>
+<!-- 2024 -->
+<div class="relative grid md:grid-cols-2 gap-12 items-center reveal-on-scroll">
+<div class="md:text-right">
+<h3 class="text-6xl font-black text-forest-brand/10 mb-2">2024</h3>
+<h4 class="text-xl font-bold text-navy-brand mb-4 uppercase">Expansion &amp; Scale</h4>
+<p class="text-on-surface-variant max-w-md md:ml-auto">Launched the national "Impact Finance Conclave" bringing together 20+ universities and 5 venture capital firms.</p>
+</div>
+<div class="h-64 rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<div class="w-full h-full bg-surface-container-high bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-1000" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtbLvWt60EP-tDxGFBlxkDEd7EST23r0n3O87mBCaS_gprLu_B-LyBmTQ4tJLeuxFJurDdl0KDz7jk3NeRd9PtD77EIuimpyeUGzQWASiuRtDv0pZvaoPoHwFzEdUOigy9HqTdwZ2ylE8nYOPWlUSJcaG8Rx3Jt6pybBa173OQ4ZFtFRXfS0OEtbuPhREwLxowGU8uY9num189A5RcV7RtNralqRBKwoIob6dCjL9nGdoRh3FjSwpaAXn-RnUjyTz6BMsQ6A94chI')"></div>
+</div>
+<div class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-forest-brand border-4 border-white"></div>
+</div>
+<!-- 2023 -->
+<div class="relative grid md:grid-cols-2 gap-12 items-center reveal-on-scroll">
+<div class="md:order-2">
+<h3 class="text-6xl font-black text-forest-brand/10 mb-2">2023</h3>
+<h4 class="text-xl font-bold text-navy-brand mb-4 uppercase">RISE Capital Formation</h4>
+<p class="text-on-surface-variant max-w-md">Formalized our student-managed impact fund, focusing on early-stage social enterprises in the Indian ecosystem.</p>
+</div>
+<div class="md:order-1 h-64 rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<div class="w-full h-full bg-surface-container-high bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-1000" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMdOs-j9e5LGPjGoiW827GZhV9r6ghO_MbkLmbz-tFtI3yEdJy3Bx524oc-3atbfwZ8FxNquDt0F0T1TlYBaAI1tV-8sFWdTudiFySE9bn45kMSDlnFcyVqurK9uxguH-uWd-2_u0bzopmtRMlWtjff2cDmJLN33wsALj7D1knY2vJuouY_16hivjfXSL7goEcwbwKAF9aEgQuFoiXSPML533qVOdHOpjuSBTGdVk-NM22d8k8ts2wLJW2XnYaMo-I_z4GghmIdCM')"></div>
+</div>
+<div class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-forest-brand border-4 border-white"></div>
+</div>
+<!-- 2022 -->
+<div class="relative grid md:grid-cols-2 gap-12 items-center reveal-on-scroll">
+<div class="md:text-right">
+<h3 class="text-6xl font-black text-forest-brand/10 mb-2">2022</h3>
+<h4 class="text-xl font-bold text-navy-brand mb-4 uppercase">The Inception</h4>
+<p class="text-on-surface-variant max-w-md md:ml-auto">Founded by a group of passionate students at Ashoka University looking to apply classroom theory to social sector challenges.</p>
+</div>
+<div class="h-64 rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<div class="w-full h-full bg-surface-container-high bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-1000" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuPrWBCvihppW21s-p1Akka4SzDPZYGBIHS9sBWYkK-Ar0uj0t26PdDddttsPu5--rGpcbITwvSrXfNm-vseIeT_slM7YXl6-jESpDFpUmJzE3cbMtxF7RmxLaVQpxmsjHOiN6b-GyGg2twy2gJywCpm1MTAWHMvZRZkb6Z-vStras9n-KlGgWYHAyp8ck9qQIoj63MWOucOEnTq20QFKX4pKvKuJbOS-d6d7gFQnEpph8bMhVet4fZ-b5M3KUOuC11m0MBuDe0Hcs')"></div>
+</div>
+<div class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-forest-brand border-4 border-white"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="py-24 px-container-padding max-w-container-max mx-auto text-center reveal-on-scroll">
+<span class="text-forest-brand text-5xl mb-8 block font-display-lg opacity-20">99</span>
+<blockquote class="text-2xl md:text-3xl font-light text-on-surface leading-relaxed max-w-4xl mx-auto italic mb-12">
+            "Finance is not just about the accumulation of wealth, but the distribution of opportunity."
+        </blockquote>
+<div class="w-16 h-[2px] bg-forest-brand mx-auto mb-6"></div>
+<p class="font-label-lg text-on-surface-variant uppercase tracking-[0.4em]">The AIFC Philosophy</p>
+</section>
+</main>
+<!-- Footer Identical to SCREEN_38 -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="w-full py-24 px-container-padding max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
+<div class="md:col-span-5">
+<span class="font-headline-sm font-bold text-primary mb-8 block">Ashoka Impact Finance Club</span>
+<p class="text-on-surface-variant font-body-md max-w-sm mb-10 leading-relaxed">
+                    The definitive hub for student engagement in finance and social development at Ashoka University.
+                </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">group</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2 md:col-start-7">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Navigation</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Home</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">About Us</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Projects</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Team</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Resources</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">RISE Capital</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Conclave 2024</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Research</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Contact</h4>
+<p class="text-on-surface-variant font-label-lg mb-4">info@aifc-ashoka.edu</p>
+<p class="text-on-surface-variant font-label-lg">Sonepat, Haryana</p>
+</div>
+</div>
+<div class="pt-10 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-body-md text-on-surface-variant">© 2024 Ashoka Impact Finance Club. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Scroll Reveal Logic
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('h-16', 'shadow-sm');
+            nav.classList.remove('h-20');
+        } else {
+            nav.classList.add('h-20');
+            nav.classList.remove('h-16', 'shadow-sm');
+        }
+    });
+</script>
+</body></html>

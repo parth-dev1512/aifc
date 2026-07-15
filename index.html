@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "secondary-fixed": "#e2e2e5",
+                            "tertiary-container": "#44474e",
+                            "on-secondary": "#ffffff",
+                            "primary": "#000000",
+                            "on-tertiary-fixed": "#000000",
+                            "primary-container": "#1a1c1e",
+                            "inverse-on-surface": "#f0f0f3",
+                            "secondary-container": "#dee2eb",
+                            "surface-dim": "#dadadc",
+                            "tertiary-fixed": "#e2e2e5",
+                            "on-surface": "#1a1c1e",
+                            "tertiary": "#1a1c1e",
+                            "on-secondary-container": "#44474e",
+                            "surface-variant": "#e2e2e5",
+                            "on-tertiary-fixed-variant": "#44474e",
+                            "on-primary-fixed": "#000000",
+                            "error-container": "#f9dedc",
+                            "surface-container-highest": "#e2e2e5",
+                            "surface-container-lowest": "#ffffff",
+                            "on-tertiary-container": "#ffffff",
+                            "outline": "#74777f",
+                            "on-primary-container": "#ffffff",
+                            "primary-fixed-dim": "#44474e",
+                            "outline-variant": "#c4c7cf",
+                            "background": "#ffffff",
+                            "surface-container-high": "#e8e8ea",
+                            "on-tertiary": "#ffffff",
+                            "on-background": "#1a1c1e",
+                            "on-error": "#ffffff",
+                            "on-error-container": "#410002",
+                            "surface-tint": "#000000",
+                            "surface-container": "#eeeef0",
+                            "surface-bright": "#f9f9fc",
+                            "inverse-surface": "#2f3133",
+                            "on-secondary-fixed": "#000000",
+                            "on-primary": "#ffffff",
+                            "surface-container-low": "#f3f3f6",
+                            "error": "#b3261e",
+                            "tertiary-fixed-dim": "#c4c7cf",
+                            "secondary": "#44474e",
+                            "inverse-primary": "#ffffff",
+                            "surface": "#ffffff",
+                            "on-surface-variant": "#44474e",
+                            "on-primary-fixed-variant": "#44474e",
+                            "secondary-fixed-dim": "#c4c7cf",
+                            "on-secondary-fixed-variant": "#44474e",
+                            "primary-fixed": "#e2e2e5",
+                            "navy-brand": "#000000",
+                            "forest-brand": "#1a1c1e"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.5rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "gutter": "16px",
+                            "stack-lg": "24px",
+                            "base": "8px",
+                            "stack-sm": "4px",
+                            "section-gap": "120px",
+                            "stack-md": "12px",
+                            "container-padding": "24px",
+                            "container-max": "1200px"
+                        },
+                        "fontFamily": {
+                            "body-lg": ["Hanken Grotesk"],
+                            "headline-lg": ["Hanken Grotesk"],
+                            "headline-sm": ["Hanken Grotesk"],
+                            "title-lg": ["Hanken Grotesk"],
+                            "headline-lg-mobile": ["Hanken Grotesk"],
+                            "label-lg": ["Hanken Grotesk"],
+                            "body-md": ["Hanken Grotesk"],
+                            "display-lg": ["Hanken Grotesk"],
+                            "headline-md": ["Hanken Grotesk"],
+                            "watermark": ["Hanken Grotesk"]
+                        },
+                        "fontSize": {
+                            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                            "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                            "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                            "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                            "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                            "watermark": ["120px", {"lineHeight": "120px", "fontWeight": "900"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+</head>
+<body class="font-body-md selection:bg-black selection:text-white bg-white">
+<!-- TopNavBar -->
+<nav class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-outline-variant h-20 flex items-center transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-container-padding max-w-container-max mx-auto h-full">
+<a class="font-headline-sm text-primary font-bold transition-all active:scale-95" href="index.html">
+            Ashoka Impact Finance Club
+        </a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="about_us/index.html">About Us</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="rise_capital/index.html">RISE Capital</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="advisory_projects/index.html">Advisory Projects</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="conclave/index.html">Conclave</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="the_review/index.html">The Review</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="seminars/index.html">Seminars</a>
+<div class="relative group">
+<button class="font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center gap-1">
+                    Team <span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+</div>
+<a class="bg-navy-brand text-white px-6 py-2.5 rounded-lg font-label-lg hover:bg-zinc-800 transition-all active:scale-95 hidden md:block shadow-sm" href="join_us/index.html">
+            Join Us
+        </a>
+<button class="lg:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Navigation Overlay -->
+<div class="fixed inset-0 bg-white z-[60] flex flex-col p-8 transform translate-x-full transition-transform duration-300 lg:hidden shadow-2xl" id="mobile-menu">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-sm font-bold text-primary">AIFC</span>
+<button id="close-menu-btn">
+<span class="material-symbols-outlined text-primary text-3xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="font-headline-md font-bold text-on-surface-variant" href="about_us/index.html">About Us</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="rise_capital/index.html">RISE Capital</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="advisory_projects/index.html">Advisory Projects</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="conclave/index.html">Conclave</a>
+<a class="font-headline-md font-bold text-on-surface-variant" href="members/index.html">Team</a>
+</div>
+<a class="mt-auto bg-navy-brand text-white py-4 rounded-lg font-label-lg text-center" href="join_us/index.html">Join Us</a>
+</div>
+<!-- Hero Section: Architectural Background & Centered Title -->
+<header class="relative w-full overflow-hidden flex items-center justify-center bg-black" style="height: 75vh;">
+<div class="absolute inset-0 w-full h-full grayscale">
+<video autoplay="" class="w-full h-full object-cover opacity-60" loop="" muted="" playsinline="" src="media/ashokaAerial.mp4"></video>
+</div>
+<div class="relative z-10 text-center px-container-padding max-w-5xl mx-auto">
+<p class="font-label-lg text-white mb-4 tracking-widest uppercase opacity-90">Ashoka's Premier Investment and Finance Club</p>
+<h1 class="font-display-lg text-white font-black tracking-tight leading-none text-4xl md:text-6xl lg:text-7xl uppercase" id="hero-title">
+            Ashoka Impact <br/>Finance Club
+        </h1>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full bg-white">
+<!-- Three Block Layout Section -->
+<section class="py-24 px-container-padding max-w-container-max mx-auto text-center" id="about-section">
+<h2 class="font-display-lg text-on-surface mb-4 text-4xl lg:text-5xl">About Us</h2>
+<div class="w-24 h-1 bg-outline mb-16 mx-auto"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<!-- Block 1: Professional Development -->
+<div class="flex flex-col items-center">
+<div class="w-full h-px bg-outline-variant mb-8 opacity-40"></div>
+<h3 class="font-headline-sm text-on-surface mb-6">Professional Development</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed mb-10 max-w-xs mx-auto">
+                    AIFC prepares our analysts for success in the finance industry through our extensive resources and alumni network. Our members are able to use the knowledge they've gained to become top performers once they begin their internships and full-time careers.
+                </p>
+<button class="mt-auto bg-navy-brand text-white px-8 py-2.5 rounded-sm font-label-lg uppercase tracking-wide hover:bg-zinc-800 transition-all active:scale-95">
+                    Placement
+                </button>
+</div>
+<!-- Block 2: Stock Pitches -->
+<div class="flex flex-col items-center">
+<div class="w-full h-px bg-outline-variant mb-8 opacity-40"></div>
+<h3 class="font-headline-sm text-on-surface mb-6">Stock Pitches</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed mb-10 max-w-xs mx-auto">
+                    Every semester, each of our funds pitches a stock to the entire club. These stocks are then voted on by all members to decide if the stock should be added to our portfolio. These pitches help members develop their equity research skills and provide investment ideas.
+                </p>
+<button class="mt-auto bg-navy-brand text-white px-8 py-2.5 rounded-sm font-label-lg uppercase tracking-wide hover:bg-zinc-800 transition-all active:scale-95">
+                    Our Pitches
+                </button>
+</div>
+<!-- Block 3: Education -->
+<div class="flex flex-col items-center">
+<div class="w-full h-px bg-outline-variant mb-8 opacity-40"></div>
+<h3 class="font-headline-sm text-on-surface mb-6">Education</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed mb-10 max-w-xs mx-auto">
+                    Through our rigorous 10-week new member education process and sophomore series, members strengthen their knowledge of financial markets, modeling, and investing. AIFC emphasizes applicable skills to prepare its analysts for recruitment in various industries.
+                </p>
+<button class="mt-auto bg-navy-brand text-white px-8 py-2.5 rounded-sm font-label-lg uppercase tracking-wide hover:bg-zinc-800 transition-all active:scale-95">
+                    Resources
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-outline-variant">
+<div class="w-full py-24 px-container-padding max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
+<div class="md:col-span-5">
+<span class="font-headline-sm font-bold text-primary mb-8 block">Ashoka Impact Finance Club</span>
+<p class="text-on-surface-variant font-body-md max-w-sm mb-10 leading-relaxed">
+                    The definitive hub for student engagement in finance and social development at Ashoka University.
+                </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</a>
+<a class="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">group</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2 md:col-start-7">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Projects</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Team</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">RISE Capital</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Conclave 2024</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg" href="#">Research</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-primary uppercase tracking-widest mb-8">Contact</h4>
+<p class="text-on-surface-variant font-label-lg mb-4">info@aifc-ashoka.edu</p>
+<p class="text-on-surface-variant font-label-lg">Sonepat, Haryana</p>
+</div>
+</div>
+<div class="pt-10 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-body-md text-on-surface-variant">© 2024 Ashoka Impact Finance Club. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Mobile Menu Logic
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('h-16', 'shadow-sm');
+            nav.classList.remove('h-20');
+        } else {
+            nav.classList.add('h-20');
+            nav.classList.remove('h-16', 'shadow-sm');
+        }
+    });
+</script>
+</body></html>
