@@ -118,7 +118,7 @@
         }
     </style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary selection:text-white font-body-md">
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-white font-body-md overflow-x-hidden">
 <!-- Top Navigation Bar (Identical to SCREEN_38) -->
 <nav class="bg-surface/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-outline-variant h-20 flex items-center transition-all duration-300" id="main-nav">
 <div class="flex justify-between items-center w-full px-container-padding max-w-container-max mx-auto h-full">
@@ -151,6 +151,25 @@
 </button>
 </div>
 </nav>
+<!-- Mobile Navigation Overlay -->
+<div class="fixed inset-0 bg-surface z-[60] flex flex-col p-8 transform translate-x-full transition-transform duration-300 lg:hidden shadow-2xl" id="mobile-menu">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-sm font-bold text-primary">AIFC</span>
+<button id="close-menu-btn">
+<span class="material-symbols-outlined text-primary text-3xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="text-2xl font-bold text-on-surface-variant" href="../about_us/index.html">About Us</a>
+<a class="text-2xl font-bold text-on-surface-variant" href="../rise_capital/index.html">RISE Capital</a>
+<a class="text-2xl font-bold text-on-surface-variant" href="../advisory_projects/index.html">Advisory Projects</a>
+<a class="text-2xl font-bold text-on-surface-variant" href="../conclave/index.html">Conclave</a>
+<a class="text-2xl font-bold text-primary" href="../the_review/index.html">The Review</a>
+<a class="text-2xl font-bold text-on-surface-variant" href="../seminars/index.html">Seminars</a>
+<a class="text-2xl font-bold text-on-surface-variant" href="../members/index.html">Team</a>
+</div>
+<a class="mt-auto bg-navy-brand text-white py-4 rounded-lg font-label-lg text-center" href="../join_us/index.html">Join Us</a>
+</div>
 <main class="max-w-container-max mx-auto px-container-padding pt-32 pb-section-gap">
 <!-- Editorial Header Section -->
 <section class="pb-16 fade-in">
@@ -325,6 +344,19 @@
 </div>
 </footer>
 <script>
+    // Mobile Menu Logic
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+    });
+
     // Navbar scroll effect
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('main-nav');
