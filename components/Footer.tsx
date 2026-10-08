@@ -16,13 +16,19 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 className="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300"
-                href="#"
+                href="https://wa.me/?text=Check%20out%20the%20Ashoka%20Impact%20Finance%20Club%20https://ashoka-impact-finance.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Share"
               >
                 <span className="material-symbols-outlined text-xl">share</span>
               </a>
               <a
                 className="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300"
-                href="#"
+                href="https://www.instagram.com/impactfinance.ashoka?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
               >
                 <span className="material-symbols-outlined text-xl">
                   alternate_email
@@ -30,7 +36,10 @@ export default function Footer() {
               </a>
               <a
                 className="w-12 h-12 rounded-lg border border-outline-variant flex items-center justify-center hover:bg-navy-brand hover:text-white hover:border-navy-brand transition-all duration-300"
-                href="#"
+                href="https://www.linkedin.com/company/ashokaimpactfinanceclub/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <span className="material-symbols-outlined text-xl">group</span>
               </a>
