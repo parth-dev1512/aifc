@@ -1,10 +1,9 @@
 import Link from "next/link";
 import ShareButton from "./ShareButton";
 
-// TODO: replace with the club's real profile URLs.
 const SOCIAL_LINKS = {
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
+  instagram: "https://www.instagram.com/impactfinance.ashoka/",
+  linkedin: "https://www.linkedin.com/company/ashokaimpactfinanceclub/",
 };
 
 const socialClass =
