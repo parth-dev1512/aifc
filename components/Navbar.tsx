@@ -33,7 +33,8 @@ export default function Navbar() {
     setMenuOpen(false);
   }, [pathname]);
 
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
   const teamActive = teamLinks.some((l) => isActive(l.href));
 
   return (
