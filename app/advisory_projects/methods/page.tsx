@@ -83,12 +83,7 @@ export default function Page() {
             </section>
           ))}
 
-          <p className="text-xs text-on-surface-variant pb-20">
-            {engagements
-              .filter((e) => e.map)
-              .map((e) => `${e.code}: ${e.name}`)
-              .join(" · ")}
-          </p>
+          <div className="pb-20" />
         </div>
       </main>
     </PageShell>

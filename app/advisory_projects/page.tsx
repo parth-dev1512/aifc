@@ -293,12 +293,6 @@ export default function Page() {
               </div>
             ))}
           </div>
-          <Link
-            href="/advisory_projects/methods"
-            className="inline-block mt-8 font-semibold text-navy-brand underline underline-offset-4"
-          >
-            See the full methods library →
-          </Link>
         </section>
 
         {/* Process */}

@@ -62,15 +62,8 @@ export const engagements: Engagement[] = [
     practice: "Investment Readiness",
     map: { side: "sell", capital: "impact", x: 30, y: 72, reusable: true },
     capitalLabel: "Impact investing",
-    detail:
-      "Kkhavo sources a GI-tagged heritage rice directly from farmers. We are assessing how much of the value reaches the producer and preparing the business for investment.",
-    frameworks: [
-      "Value chain analysis, farmgate to consumer",
-      "Five dimensions of impact",
-      "IRIS+ indicators",
-      "Scenario financial model",
-      "Investor mapping",
-    ],
+    detail: "[Description to be confirmed.]",
+    frameworks: ["[To be confirmed]"],
   },
   {
     code: "DLX",
@@ -81,15 +74,9 @@ export const engagements: Engagement[] = [
       "Designing a blended capital stack for recovery infrastructure, including an assessment of revenue from Extended Producer Responsibility credits.",
     practice: "Capital Structuring",
     map: { side: "sell", capital: "innovative", x: 40, y: 18, reusable: true },
-    capitalLabel: "Innovative finance (blended)",
-    detail:
-      "Deluxe Recycling India needed to finance recovery infrastructure that no single instrument could fund. We designed a blended capital stack and assessed the revenue created by Extended Producer Responsibility credits.",
-    frameworks: [
-      "Capital stack analysis",
-      "Regulatory revenue assessment (EPR)",
-      "SDG target alignment",
-      "Investor mapping",
-    ],
+    capitalLabel: "Innovative finance",
+    detail: "[Description to be confirmed.]",
+    frameworks: ["[To be confirmed]"],
   },
   {
     code: "KUB",
@@ -101,15 +88,8 @@ export const engagements: Engagement[] = [
     practice: "Implementation and Scale",
     map: { side: "sell", capital: "innovative", x: 50, y: 48, reusable: false },
     capitalLabel: "Innovative finance",
-    detail:
-      "Kubanda Cryotherapy trains clinicians in a low-cost treatment for early-stage breast cancer. We are building the plan that takes the programme from pilot to new sites.",
-    frameworks: [
-      "RE-AIM evaluation framework",
-      "Kirkpatrick four levels",
-      "Stakeholder influence and interest map",
-      "Site selection scorecard",
-      "Roadmap, RACI and risk register",
-    ],
+    detail: "[Description to be confirmed.]",
+    frameworks: ["[To be confirmed]"],
   },
   {
     code: "SSF",
@@ -120,15 +100,9 @@ export const engagements: Engagement[] = [
       "An outcome measurement framework across four programme areas, built to support CSR and outcomes-linked funding applications.",
     practice: "Impact Measurement",
     map: { side: "sell", capital: "innovative", x: 45, y: 72, reusable: true },
-    capitalLabel: "Innovative finance (outcomes-based)",
-    detail:
-      "Spread Smile Foundation needed to show funders what its programmes achieve. We built an outcome measurement framework across four programme areas to support CSR and outcomes-linked funding applications.",
-    frameworks: [
-      "Theory of Change",
-      "Social Return on Investment",
-      "SDG target alignment",
-      "CSR readiness review",
-    ],
+    capitalLabel: "Innovative finance",
+    detail: "[Description to be confirmed.]",
+    frameworks: ["[To be confirmed]"],
   },
   {
     code: "RCB",
@@ -139,14 +113,9 @@ export const engagements: Engagement[] = [
       "A framework to evaluate, prioritise and allocate resources across social-impact initiatives, with donor, membership and publication strategy.",
     practice: "Portfolio Strategy",
     map: { side: "buy", capital: "innovative", x: 50, y: 30, reusable: true },
-    capitalLabel: "Innovative finance (grant allocation)",
-    detail:
-      "The Rotary Club of Bombay funds a wide range of social-impact initiatives. We are building a transparent framework to decide which of them to fund and grow.",
-    frameworks: [
-      "Multi-criteria allocation framework",
-      "Cost per outcome comparison",
-      "Stakeholder influence and interest map",
-    ],
+    capitalLabel: "Innovative finance",
+    detail: "[Description to be confirmed.]",
+    frameworks: ["[To be confirmed]"],
   },
   {
     code: "SPT",
@@ -285,28 +254,27 @@ export const faqs = [
   {
     id: "who",
     title: "Who will work on our project?",
-    body: "A team of AIFC analysts, led by an engagement lead and supervised by the Advisory directors, who review all work before it is shared with you. Analysts are selected through a competitive process and trained in impact measurement and financial modelling before they join a client team.",
+    body: "[Answer to be confirmed.]",
   },
   {
     id: "orgs",
     title: "What kinds of organisations do you work with?",
-    body: "Social enterprises, foundations, non-profits and other mission-led organisations and firms. Investment funds interested in working with AIFC can learn more about RISE Capital, the club's undergraduate-led impact investment fund.",
+    body: "[Answer to be confirmed.]",
   },
   {
     id: "length",
     title: "How long does an engagement take?",
-    // TODO: confirm the typical engagement length with the Advisory directors.
-    body: "It depends on the scope. The timeline for each engagement is agreed with you in the scoping letter before any work begins.",
+    body: "[Answer to be confirmed.]",
   },
   {
     id: "data",
     title: "How will our information be handled?",
-    body: "Your information is seen only by the engagement team and the Advisory directors. We will sign an NDA on request, and nothing about your organisation is published without your consent.",
+    body: "[Answer to be confirmed.]",
   },
   {
     id: "after",
     title: "What happens after we submit an enquiry?",
-    body: "The directors review your enquiry against our selection criteria. If it fits, we invite you to a scoping call with an engagement lead. The scope, team and timeline are then agreed in a written scoping letter.",
+    body: "[Answer to be confirmed.]",
   },
 ];
 

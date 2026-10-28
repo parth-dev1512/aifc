@@ -15,6 +15,10 @@ type Field = {
 
 type Step = { title: string; heading: string; intro?: string; fields: Field[] };
 
+// Only step 1 is shown in the design; the questions for steps 2 and 3, and
+// the dropdown options, are still to be confirmed.
+const TBC_OPTIONS = ["[Options to be confirmed]"];
+
 const steps: Step[] = [
   {
     title: "Organisation",
@@ -23,105 +27,24 @@ const steps: Step[] = [
       "AIFC Advisory works with organisations and firms. If you represent an investment fund, please get in touch with RISE Capital, the club's impact investment fund.",
     fields: [
       { name: "organisation", label: "Organisation name", required: true },
-      { name: "website", label: "Website", type: "url", defaultValue: "https://" },
-      {
-        name: "orgType",
-        label: "Organisation type",
-        type: "select",
-        required: true,
-        options: [
-          "Social enterprise",
-          "Non-profit or NGO",
-          "Foundation or trust",
-          "Company or CSR team",
-          "Civic institution",
-          "Other",
-        ],
-      },
-      {
-        name: "sector",
-        label: "Sector",
-        type: "select",
-        required: true,
-        options: [
-          "Agriculture and food",
-          "Climate and environment",
-          "Circular economy",
-          "Education",
-          "Health",
-          "Livelihoods",
-          "Tourism",
-          "Technology",
-          "Other",
-        ],
-      },
-      {
-        name: "revenue",
-        label: "Annual revenue or budget",
-        type: "select",
-        options: [
-          "Pre-revenue",
-          "Under ₹1 crore",
-          "₹1 to 10 crore",
-          "₹10 to 50 crore",
-          "Above ₹50 crore",
-        ],
-      },
+      { name: "website", label: "Website", type: "url", placeholder: "https://" },
+      { name: "orgType", label: "Organisation type", type: "select", required: true, options: TBC_OPTIONS },
+      { name: "sector", label: "Sector", type: "select", required: true, options: TBC_OPTIONS },
+      { name: "revenue", label: "Annual revenue or budget", type: "select", options: TBC_OPTIONS },
       { name: "location", label: "Where you operate", placeholder: "City, state or region" },
     ],
   },
   {
     title: "Question",
-    heading: "Your question",
-    intro: "Tell us what you are working on. A few sentences is enough.",
-    fields: [
-      {
-        name: "practice",
-        label: "Which area is closest to your question?",
-        type: "select",
-        required: true,
-        wide: true,
-        options: [
-          "Investment Readiness",
-          "Capital Structuring",
-          "Portfolio Strategy",
-          "Impact Measurement",
-          "Implementation and Scale",
-          "Not sure",
-        ],
-      },
-      {
-        name: "question",
-        label: "What question do you need help with?",
-        type: "textarea",
-        required: true,
-        wide: true,
-      },
-      {
-        name: "outcome",
-        label: "What would you like to have at the end of the engagement?",
-        type: "textarea",
-        wide: true,
-      },
-      {
-        name: "timing",
-        label: "When do you need it?",
-        type: "select",
-        options: ["Within 2 months", "2 to 4 months", "4 to 6 months", "Flexible"],
-      },
-    ],
+    heading: "Question",
+    intro: "[Questions for this step to be confirmed.]",
+    fields: [],
   },
   {
     title: "Details",
-    heading: "Your details",
-    intro: "Who should we contact about this enquiry?",
-    fields: [
-      { name: "name", label: "Full name", required: true },
-      { name: "role", label: "Role" },
-      { name: "email", label: "Email", type: "email", required: true },
-      { name: "phone", label: "Phone", type: "tel" },
-      { name: "source", label: "How did you hear about us?", wide: true },
-    ],
+    heading: "Details",
+    intro: "[Questions for this step to be confirmed.]",
+    fields: [],
   },
 ];
 
@@ -148,13 +71,8 @@ export default function EnquiryForm() {
         <span className="material-symbols-outlined text-4xl text-forest-brand mb-4 block">
           check_circle
         </span>
-        <h2 className="font-display text-3xl text-ink mb-4">
-          Thank you. We have your enquiry.
-        </h2>
         <p className="text-on-surface-variant leading-relaxed max-w-xl">
-          The Advisory directors will review it against our selection criteria.
-          If it fits, a member of the team will be in touch to arrange a
-          scoping call.
+          [Confirmation message to be confirmed.]
         </p>
       </div>
     );
