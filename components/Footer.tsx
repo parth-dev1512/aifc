@@ -96,7 +96,7 @@ export default function Footer() {
                   className="text-on-surface-variant hover:text-primary transition-colors font-label-lg"
                   href="/advisory_projects"
                 >
-                  Projects
+                  Advisory
                 </Link>
               </li>
               <li>

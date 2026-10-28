@@ -59,6 +59,10 @@ const config: Config = {
         "primary-fixed": "rgb(var(--c-primary-fixed) / <alpha-value>)",
         "navy-brand": "rgb(var(--c-navy-brand) / <alpha-value>)",
         "forest-brand": "rgb(var(--c-forest-brand) / <alpha-value>)",
+        "gold-brand": "rgb(var(--c-gold-brand) / <alpha-value>)",
+        "gold-deep": "rgb(var(--c-gold-deep) / <alpha-value>)",
+        "cream": "rgb(var(--c-cream) / <alpha-value>)",
+        "ink": "rgb(var(--c-ink) / <alpha-value>)",
         "brand": {
           "forest": "#3d5919",
           "navy": "#00224d",
